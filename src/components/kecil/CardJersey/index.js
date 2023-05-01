@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import { colors, fonts, responsiveWidth } from '../../../utils';
@@ -29,10 +30,12 @@ const styles = StyleSheet.create({
         padding: 10,
         borderRadius: 10,
         marginBottom: 10
+        
     },
     gambar: {
         width: 124,
-        height: 124
+        height: 124,
+        borderRadius: 10,
     },
     text: {
         fontFamily: fonts.primary.bold,

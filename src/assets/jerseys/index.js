@@ -1,6 +1,6 @@
-import ChelseaDepan from './chelsea1.png';
+import SampahSatu from './sampah1.png';
 import ChelseaBelakang from './chelsea2.png';
-import DortmundDepan from './dortmund1.png';
+import DortmundDepan from './sampah1.png';
 import DortmundBelakang from './dortmund2.png';
 import JuveDepan from './juve1.png';
 import JuveBelakang from './juve2.png';
@@ -16,7 +16,7 @@ import MunchenDepan from './munchen1.png';
 import MunchenBelakang from './munchen2.png';
 
 export {
-  ChelseaDepan,
+  SampahSatu,
   ChelseaBelakang,
   DortmundBelakang,
   DortmundDepan,

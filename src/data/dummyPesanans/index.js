@@ -1,6 +1,6 @@
 import {
     ChelseaBelakang,
-    ChelseaDepan,
+    SampahSatu,
     DortmundBelakang,
     DortmundDepan,
     Bundesliga,
@@ -25,7 +25,7 @@ import {
           product: {
             id: 1,
             nama: 'CHELSEA 3RD 2018-2019',
-            gambar: [ChelseaDepan, ChelseaBelakang],
+            gambar: [SampahSatu, ChelseaBelakang],
             liga: {
               id: 2,
               nama: 'Premier League',

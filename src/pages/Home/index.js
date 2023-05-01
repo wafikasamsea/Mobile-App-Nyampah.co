@@ -30,15 +30,11 @@ export default class Home extends Component {
           <HeaderComponent navigation={navigation}/>
           <BannerSlider />
           <View style={styles.pilihLiga}>
-            <Text style={styles.label}>Pilih Liga</Text>
+            <Text style={styles.label}>Category</Text>
             <ListLiga ligas={ligas} />
           </View>
 
           <View style={styles.pilihJersey}>
-            <Text style={styles.label}>
-              Pilih <Text style={styles.boldLabel}>Jersey</Text> Yang Anda
-              Inginkan
-            </Text>
             <ListJerseys jerseys={jerseys} navigation={navigation}/>
 
             <Tombol title="Lihat Semua" type="text" padding={7} />
