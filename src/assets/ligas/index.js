@@ -1,6 +1,6 @@
-import SerieA from './seriea.png'
-import LaLiga from './laliga.png'
-import PremierLeague from './premierleague.png'
-import BundesLiga from './bundesliga.png'
+import SerieA from './plasticwaste.png'
+import LaLiga from './organicwaste.png'
+import PremierLeague from './glasswaste.png'
+import BundesLiga from './ewaste.png'
 
 export { BundesLiga, LaLiga, PremierLeague, SerieA }
