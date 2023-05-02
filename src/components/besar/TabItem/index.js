@@ -3,8 +3,8 @@ import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {
   IconHome,
   IconHomeAktif,
-  IconJersey,
-  IconJerseyAktif,
+  IconSampah,
+  IconSampahAktif,
   IconProfile,
   IconProfileAktif,
 } from '../../../assets';
@@ -16,8 +16,8 @@ const TabItem = ({isFocused, onLongPress, onPress, label}) => {
       return isFocused ? <IconHomeAktif /> : <IconHome />;
     }
 
-    if (label === 'Jersey') {
-      return isFocused ? <IconJerseyAktif /> : <IconJersey />;
+    if (label === 'Sampah') {
+      return isFocused ? <IconSampahAktif /> : <IconSampah />;
     }
 
     if (label === 'Profile') {

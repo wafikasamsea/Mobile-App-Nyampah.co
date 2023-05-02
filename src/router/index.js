@@ -14,7 +14,7 @@ const MainApp = () => {
       <Tab.Screen
         name="ListJersey"
         component={ListJersey}
-        options={{title: 'Jersey', headerShown: false}}
+        options={{title: 'Sampah', headerShown: false}}
       />
       <Tab.Screen name="Profile" component={Profile}  options={{headerShown: false}}/>
     </Tab.Navigator>

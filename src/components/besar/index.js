@@ -4,7 +4,7 @@ import BannerSlider from './BannerSlider';
 import ListLiga from './ListLiga';
 import ListJerseys from './ListJerseys';
 import ListMenu from './ListMenu';
-import JerseySlider from './JerseySlider';
+import JerseySlider from './PromoSlider';
 import ListKeranjang from './ListKeranjang';
 import ListHistory from './ListHistory'
 

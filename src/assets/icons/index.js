@@ -1,7 +1,7 @@
 import IconHomeAktif from './home-aktif.svg';
 import IconHome from './home.svg';
-import IconJerseyAktif from './jersey-aktif.svg';
-import IconJersey from './jersey.svg';
+import IconSampahAktif from './sampah-aktif.svg';
+import IconSampah from './sampah.svg';
 import IconProfileAktif from './profile-aktif.svg';
 import IconProfile from './profile.svg';
 import IconCari from './search.svg';
@@ -19,8 +19,8 @@ import IconSubmit from './submit.svg'
 export {
   IconHome,
   IconHomeAktif,
-  IconJersey,
-  IconJerseyAktif,
+  IconSampah,
+  IconSampahAktif,
   IconProfile,
   IconProfileAktif,
   IconCari,
