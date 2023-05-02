@@ -1,4 +1,4 @@
 export * from './images'
 export * from './icons'
-export * from './ligas'
-export * from './jerseys'
+export * from './sampah'
+export * from './sampahCategory'
