@@ -15,7 +15,7 @@ import {
   export const dummyPesanans = [
     {
       id: 1,
-      tanggalPemesanan: 'Jumat, 18 September 2020',
+      tanggalPemesanan: 'Rabu, 3 Mei 2023',
       status: 'keranjang',
       totalHarga: 500000,
       berat: 1,
@@ -24,7 +24,7 @@ import {
           id: 1,
           product: {
             id: 1,
-            nama: 'CHELSEA 3RD 2018-2019',
+            nama: 'Sampah Plastik',
             gambar: [SampahSatu, ChelseaBelakang],
             liga: {
               id: 2,
@@ -33,7 +33,7 @@ import {
             },
             harga: 125000,
             berat: 0.25,
-            jenis: 'Replika Top Quality',
+            jenis: 'Sampah Industri',
             ukuran: ["S", "M", "L", "XL", "XXL"],
             ready: true
           },
@@ -46,7 +46,7 @@ import {
           id: 2,
           product: {
             id: 2,
-            nama: 'DORTMUND AWAY 2018-2019',
+            nama: 'Sampah Organik',
             gambar: [DortmundDepan, DortmundBelakang],
             liga: {
               id: 4,
@@ -55,7 +55,7 @@ import {
             },
             harga: 125000,
             berat: 0.25,
-            jenis: 'Replika Top Quality',
+            jenis: 'Sampah Industri',
             ukuran: ["S", "M", "L", "XL", "XXL"],
             ready: true
           },
@@ -68,7 +68,7 @@ import {
     },
     {
       id: 2,
-      tanggalPemesanan: 'Sabtu, 19 September 2020',
+      tanggalPemesanan: 'Senin, 1 Mei 2023',
       status: 'lunas',
       totalHarga: 375000,
       berat: 0.75,
@@ -86,7 +86,7 @@ import {
             },
             harga: 125000,
             berat: 0.25,
-            jenis: 'Replika Top Quality',
+            jenis: 'Sampah Industri',
             ukuran: ["S", "M", "L", "XL", "XXL"],
             ready: true
           },
@@ -108,7 +108,7 @@ import {
             },
             harga: 125000,
             berat: 0.25,
-            jenis: 'Replika Top Quality',
+            jenis: 'Sampah Industri',
             ukuran: ["S", "M", "L", "XL", "XXL"],
             ready: true
           },

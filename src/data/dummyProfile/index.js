@@ -1,11 +1,11 @@
 import { FotoProfile } from "../../assets";
 
 export const dummyProfile = {
-    nama: 'Muhammad Afifuddin',
-    email: 'afifbasya@gmail.com',
-    nomerHp: '085712312333',
-    alamat: 'Jl. Menoreh Tengah X/ 22 Sampangan',
-    kota: 'Semarang',
-    provinsi: 'Jawa Tengah',
+    nama: 'Hughie Raymonelika Manggala',
+    email: 'hughiemanggala@gmail.com',
+    nomerHp: '082242340494',
+    alamat: 'Jl. Dago Asri 1 No C-19',
+    kota: 'Bandung',
+    provinsi: 'Jawa Barat',
     avatar: FotoProfile
 };

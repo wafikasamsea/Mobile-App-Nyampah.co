@@ -24,7 +24,7 @@ import {
   export const dummyJerseys = [
     {
       id: 1,
-      nama: 'CHELSEA 3RD 2018-2019',
+      nama: 'Sampah Plastik',
       gambar: [SampahSatu, ChelseaBelakang],
       liga: {
         id: 2,
@@ -33,13 +33,13 @@ import {
       },
       harga: 125000,
       berat: 0.25,
-      jenis: 'Replika Top Quality',
+      jenis: 'Sampah Industri',
       ukuran: ["S", "M", "L", "XL", "XXL"],
       ready: true
     },
     {
       id: 2,
-      nama: 'DORTMUND AWAY 2018-2019',
+      nama: 'Sampah Organik',
       gambar: [DortmundDepan, DortmundBelakang],
       liga: {
         id: 4,
@@ -48,13 +48,13 @@ import {
       },
       harga: 125000,
       berat: 0.25,
-      jenis: 'Replika Top Quality',
+      jenis: 'Sampah Industri',
       ukuran: ["S", "M", "L", "XL", "XXL"],
       ready: true
     },
     {
       id: 3,
-      nama: 'JUVENTUS AWAY 2018-2019',
+      nama: 'Sampah Kaca',
       gambar: [JuveDepan, JuveBelakang],
       liga: {
         id: 3,
@@ -63,13 +63,13 @@ import {
       },
       harga: 125000,
       berat: 0.25,
-      jenis: 'Replika Top Quality',
+      jenis: 'Sampah Industri',
       ukuran: ["S", "M", "L", "XL", "XXL"],
       ready: true
     },
     {
       id: 4,
-      nama: 'LEICESTER CITY HOME 2018-2019',
+      nama: 'Sampah Elektronik',
       gambar: [LeicesterDepan, LeicesterBelakang],
       liga: {
         id: 2,
@@ -78,7 +78,7 @@ import {
       },
       harga: 125000,
       berat: 0.25,
-      jenis: 'Replika Top Quality',
+      jenis: 'Sampah Industri',
       ukuran: ["S", "M", "L", "XL", "XXL"],
       ready: true
     },
@@ -93,7 +93,7 @@ import {
       },
       harga: 125000,
       berat: 0.25,
-      jenis: 'Replika Top Quality',
+      jenis: 'Sampah Industri',
       ukuran: ["S", "M", "L", "XL", "XXL"],
       ready: true
     },
@@ -108,7 +108,7 @@ import {
       },
       harga: 125000,
       berat: 0.25,
-      jenis: 'Replika Top Quality',
+      jenis: 'Sampah Industri',
       ukuran: ["S", "M", "L", "XL", "XXL"],
       ready: true
     },
@@ -123,7 +123,7 @@ import {
       },
       harga: 125000,
       berat: 0.25,
-      jenis: 'Replika Top Quality',
+      jenis: 'Sampah Industri',
       ukuran: ["S", "M", "L", "XL", "XXL"],
       ready: true
     },
@@ -138,7 +138,7 @@ import {
       },
       harga: 125000,
       berat: 0.25,
-      jenis: 'Replika Top Quality',
+      jenis: 'Sampah Industri',
       ukuran: ["S", "M", "L", "XL", "XXL"],
       ready: true
     },
