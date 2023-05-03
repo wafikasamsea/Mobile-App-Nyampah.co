@@ -1,24 +1,24 @@
-import { BundesLiga, PremierLeague, SerieA, LaLiga } from '../../assets'
+import { Ewaste, Glass, Plastic, Organic } from '../../assets'
 
 export const dummyLigas = [
     {
         id: 1,
-        nama: "La Liga",
-        gambar: LaLiga,
+        nama: "Organic",
+        gambar: Organic,
     },
     {
         id: 2,
-        nama: "Premier League",
-        gambar: PremierLeague,
+        nama: "Glass",
+        gambar: Glass,
     },
     {
         id: 3,
-        nama: "Bundes Liga",
-        gambar: BundesLiga,
+        nama: "Ewaste",
+        gambar: Ewaste,
     },
     {
         id: 4,
-        nama: "Serie A",
-        gambar: SerieA,
+        nama: "Plastic",
+        gambar: Plastic,
     },
 ]

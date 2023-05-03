@@ -1,6 +1,6 @@
-import SerieA from './plasticwaste.png'
-import LaLiga from './organicwaste.png'
-import PremierLeague from './glasswaste.png'
-import BundesLiga from './ewaste.png'
+import Plastic from './plasticwaste.png'
+import Organic from './organicwaste.png'
+import Glass from './glasswaste.png'
+import Ewaste from './ewaste.png'
 
-export { BundesLiga, LaLiga, PremierLeague, SerieA }
+export { Ewaste, Organic, Glass, Plastic }

@@ -1,13 +1,13 @@
 import {
-    ChelseaBelakang,
-    SampahSatu,
-    DortmundBelakang,
-    DortmundDepan,
-    Bundesliga,
-    PremierLeague,
+    PlasticImage2,
+    PlasticImage,
+    EwasteImage2,
+    EwasteImage,
+    Ewaste,
+    Glass,
     MilanDepan,
     MilanBelakang,
-    SerieA,
+    Plastic,
     LiverpoolDepan,
     LiverpoolBelakang,
   } from '../../assets';
@@ -25,11 +25,11 @@ import {
           product: {
             id: 1,
             nama: 'Sampah Plastik',
-            gambar: [SampahSatu, ChelseaBelakang],
+            gambar: [PlasticImage, PlasticImage2],
             liga: {
               id: 2,
               nama: 'Premier League',
-              gambar: PremierLeague,
+              gambar: Glass,
             },
             harga: 125000,
             berat: 0.25,
@@ -47,11 +47,11 @@ import {
           product: {
             id: 2,
             nama: 'Sampah Organik',
-            gambar: [DortmundDepan, DortmundBelakang],
+            gambar: [EwasteImage, EwasteImage2],
             liga: {
               id: 4,
-              nama: 'Bundesliga',
-              gambar: Bundesliga,
+              nama: 'Ewaste',
+              gambar: Ewaste,
             },
             harga: 125000,
             berat: 0.25,
@@ -82,7 +82,7 @@ import {
             liga: {
               id: 2,
               nama: 'Premier League',
-              gambar: PremierLeague,
+              gambar: Glass,
             },
             harga: 125000,
             berat: 0.25,
@@ -104,7 +104,7 @@ import {
             liga: {
               id: 3,
               nama: 'Serie A',
-              gambar: SerieA,
+              gambar: Plastic,
             },
             harga: 125000,
             berat: 0.25,

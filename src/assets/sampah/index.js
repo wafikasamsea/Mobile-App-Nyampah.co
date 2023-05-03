@@ -1,11 +1,11 @@
-import SampahSatu from './sampah1.png';
-import ChelseaBelakang from './chelsea2.png';
-import DortmundDepan from './sampah1.png';
-import DortmundBelakang from './dortmund2.png';
-import JuveDepan from './juve1.png';
-import JuveBelakang from './juve2.png';
-import LeicesterDepan from './leicester1.png';
-import LeicesterBelakang from './leicester2.png';
+import PlasticImage from './sampah1.png';
+import PlasticImage2 from './plastik1.jpg';
+import EwasteImage from './ewaste.jpg';
+import EwasteImage2 from './ewaste1.jpg';
+import OrganicImage from './organic.jpg';
+import OrganicImage2 from './organicwaste1.jpg';
+import GlassImage from './glasswaste.jpg';
+import GlassImage2 from './glass1.jpg';
 import LiverpoolDepan from './liverpool1.png';
 import LiverpoolBelakang from './liverpool2.png';
 import MadridDepan from './madrid1.png';
@@ -16,14 +16,14 @@ import MunchenDepan from './munchen1.png';
 import MunchenBelakang from './munchen2.png';
 
 export {
-  SampahSatu,
-  ChelseaBelakang,
-  DortmundBelakang,
-  DortmundDepan,
-  JuveBelakang,
-  JuveDepan,
-  LeicesterBelakang,
-  LeicesterDepan,
+  PlasticImage,
+  PlasticImage2,
+  EwasteImage2,
+  EwasteImage,
+  OrganicImage2,
+  OrganicImage,
+  GlassImage2,
+  GlassImage,
   LiverpoolBelakang,
   LiverpoolDepan,
   MadridBelakang,
