@@ -30,10 +30,10 @@ export default class ListJersey extends Component {
 
           <View style={styles.pilihJersey}>
             <Text style={styles.label}>
-              Pilih <Text style={styles.boldLabel}>Jersey</Text> Yang Anda
-              Inginkan
+              Pilih <Text style={styles.boldLabel}>Sampah</Text> Yang Anda
+              Cari
             </Text>
-            <ListJerseys jerseys={jerseys} />
+            <ListJerseys jerseys={jerseys} navigation={navigation}/>
           </View>
 
           <Jarak height={100} />

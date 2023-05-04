@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
         fontFamily: fonts.primary.bold,
         fontSize: 13,
         textTransform: 'capitalize',
-        textAlign: 'center'
+        textAlign: 'center',
+        paddingTop: 10
     }
 });

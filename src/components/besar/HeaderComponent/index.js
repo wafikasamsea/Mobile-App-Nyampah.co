@@ -14,7 +14,7 @@ export default class HeaderComponent extends Component {
           {/* Input Pencarian  */}
           <View style={styles.searchSection}>
             <IconCari />
-            <TextInput placeholder="Cari Jersey. . ." style={styles.input} />
+            <TextInput placeholder="Cari Sampah. . ." style={styles.input} />
           </View>
           <Jarak width={10} />
           <Tombol icon="keranjang" padding={10} onPress={() => navigation.navigate('Keranjang')}/>
