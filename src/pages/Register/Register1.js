@@ -13,6 +13,36 @@ import {IlustrasiRegister1} from '../../assets';
 import {Inputan, Jarak, Tombol} from '../../components';
 
 export default class Register1 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nama: '',
+      email: '',
+      password: '',
+      nomorHp: '',
+    };
+  }
+
+  handleEmailChange = (val) => {
+    this.setState({
+      email: val,
+    });
+  };
+  handleNameChange = (val) => {
+    this.setState({
+      nama: val,
+    });
+  };
+  handlePasswordChange = (val) => {
+    this.setState({
+      password: val,
+    });
+  };
+  handleNomorHpChange = (val) => {
+    this.setState({
+      nomorHp: val,
+    });
+  };
   render() {
     return (
       <KeyboardAvoidingView
@@ -41,10 +71,10 @@ export default class Register1 extends Component {
             </View>
 
             <View style={styles.card}>
-              <Inputan label="Nama" />
-              <Inputan label="Email" />
-              <Inputan label="No. Handphone" keyboardType="number-pad" />
-              <Inputan label="Password" secureTextEntry />
+              <Inputan label="Nama" onChangeText={this.handleNameChange}/>
+              <Inputan label="Email" onChangeText={this.handleEmailChange}/>
+              <Inputan label="No. Handphone" onChangeText={this.handleNomorHpChange} keyboardType="number-pad" />
+              <Inputan label="Password" onChangeText={this.handlePasswordChange} secureTextEntry />
               <Jarak height={25} />
               <Tombol
                 title="Continue"
@@ -52,7 +82,14 @@ export default class Register1 extends Component {
                 icon="submit"
                 padding={10}
                 fontSize={18}
-                onPress={() => this.props.navigation.navigate('Register2')}
+                onPress={() =>
+                  this.props.navigation.navigate('Register2', {
+                    nama: this.state.nama,
+                    email: this.state.email,
+                    password: this.state.password,
+                    nomorHp: this.state.nomorHp,
+                  })
+                }
               />
             </View>
           </ScrollView>
@@ -66,7 +103,7 @@ const styles = StyleSheet.create({
   page: {
     flex: 1,
     backgroundColor: colors.white,
-    paddingTop: 20
+    paddingTop: 20,
   },
   ilustrasi: {
     alignItems: 'center',
@@ -109,7 +146,7 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     borderRadius: 10,
     marginTop: 10,
-    marginBottom: 10
+    marginBottom: 10,
   },
   btnBack: {
     marginLeft: 30,

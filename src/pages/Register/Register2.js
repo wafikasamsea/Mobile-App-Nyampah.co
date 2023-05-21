@@ -11,19 +11,40 @@ import {
 import {colors, fonts, responsiveWidth} from '../../utils';
 import {IlustrasiRegister2} from '../../assets';
 import {Inputan, Jarak, Pilihan, Tombol} from '../../components';
+import { register } from '../../api';
 
 export default class Register2 extends Component {
   constructor(props) {
-      super(props)
-  
-      this.state = {
-        dataProvinsi: [],
-        dataKota: [],
-      }
+    super(props);
+
+    this.state = {
+      nama: props.route.params.nama,
+      email: props.route.params.email,
+      password: props.route.params.password,
+      nohp: props.route.params.nomorHp,
+      alamat : '',
+    };
   }
-  
+  handleAlamatChange = (val) => {
+    this.setState({
+      alamat: val,
+    });
+  };
+  componentDidMount() {
+    console.log('nama: ', this.state.nama);
+    console.log('email: ', this.state.email);
+    console.log('password: ', this.state.password);
+    console.log('nomorHp: ', this.state.nohp);
+  };
+  async tryRegister(){
+    const { navigation } = this.props;
+    const res = await register(this.state);
+    if (res) {
+      navigation.replace('MainApp');
+    }
+  }
   render() {
-    const {dataKota, dataProvinsi } = this.state;
+    const {dataKota, dataProvinsi} = this.state;
     return (
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
@@ -51,10 +72,7 @@ export default class Register2 extends Component {
             </View>
 
             <View style={styles.card}>
-              <Inputan label="Alamat" textarea />
-
-              <Pilihan label="Provinsi" datas={dataProvinsi} />
-              <Pilihan label="Kota/Kab" datas={dataKota} />
+              <Inputan label="Alamat" onChangeText={this.handleAlamatChange} textarea />
               <Jarak height={25} />
               <Tombol
                 title="Continue"
@@ -62,7 +80,7 @@ export default class Register2 extends Component {
                 icon="submit"
                 padding={10}
                 fontSize={18}
-                onPress={() => this.props.navigation.navigate('MainApp')}
+                onPress={async () => await this.tryRegister()}
               />
             </View>
           </ScrollView>

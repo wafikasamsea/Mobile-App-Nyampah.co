@@ -19,8 +19,13 @@ export default class Home extends Component {
       ligas: dummyLigas,
       jerseys: dummyJerseys,
     };
+    
   }
-
+  // onClickCategory = (value) => {
+  //   this.setState( prev => ({
+  //     filteredJerseys: prev.jerseys.filter( jersey => jersey.liga.nama === value)
+  //   })
+  // }
   render() {
     const {ligas, jerseys} = this.state;
     const { navigation } = this.props

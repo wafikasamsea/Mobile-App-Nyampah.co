@@ -134,6 +134,7 @@ import {
       jenis: 'Sampah Industri',
       ukuran: ["S", "M", "L", "XL", "XXL"],
       ready: true
-    }
+    },
+    
     
   ];

@@ -3,8 +3,37 @@ import {StyleSheet, Text, View} from 'react-native';
 import {Ilustrasi, Logo} from '../../assets';
 import {Inputan, Jarak, Tombol} from '../../components';
 import {colors, fonts, responsiveHeight} from '../../utils';
-
+import { login } from '../../api';
 export default class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      password: '',
+    };
+  }
+  handleEmailChange = (text) => {
+    console.log('email: ', text);
+    this.setState({ email: text });
+  };
+
+  handlePasswordChange = (text) => {
+    console.log('passowrd: ', text);
+
+    this.setState({ password: text });
+  };
+
+  tryLogin = async () => {
+
+    const {email, password} = this.state;
+    console.log('email: ', email);
+    console.log('password: ', password);
+    const { navigation } = this.props;
+    const res = await login(email, password);
+    if (res) {
+      navigation.replace('MainApp');
+    }
+  }
   render() {
     return (
       <View style={styles.pages}>
@@ -12,10 +41,10 @@ export default class Login extends Component {
           <Logo />
         </View>
         <View style={styles.cardLogin}>
-          <Inputan label="Email" />
-          <Inputan label="Password" secureTextEntry />
+          <Inputan label="Email"  onChangeText={this.handleEmailChange}/>
+          <Inputan label="Password"  onChangeText={this.handlePasswordChange} secureTextEntry />
           <Jarak height={25} />
-          <Tombol title="Login" type="text" padding={12} fontSize={18} />
+          <Tombol title="Login" type="text" padding={12} fontSize={18} onPress={this.tryLogin} />
         </View>
 
         <View style={styles.register}>

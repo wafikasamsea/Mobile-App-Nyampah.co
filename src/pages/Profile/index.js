@@ -5,27 +5,32 @@ import { dummyProfile, dummyMenu } from '../../data'
 import { RFValue } from "react-native-responsive-fontsize";
 import { heightMobileUI } from '../../utils/constant';
 import { ListMenu } from '../../components';
+import { getProfile } from '../../api';
 
 export default class Profile extends Component {
   constructor(props) {
     super(props)
   
     this.state = {
-       profile: dummyProfile,
+       profile: '',
        menus: dummyMenu
     }
   }
-  
+  async componentDidMount() {
+    const profileData = await getProfile();
+    console.log('profile: ', profileData);
+    this.setState({profile: profileData}); 
+  }
   render() {
     const { profile, menus } = this.state
     return (
       <View style={styles.page}>
         <View style={styles.container}>
-          <Image source={profile.avatar} style={styles.foto} />
+          <Image source={dummyProfile.avatar} style={styles.foto} />
           <View style={styles.profile}>
             <Text style={styles.nama}>{profile.nama}</Text>
-            <Text style={styles.desc}>No. HP : {profile.nomerHp}</Text>
-            <Text style={styles.desc}>{profile.alamat} {profile.kota}</Text>
+            <Text style={styles.desc}>No. HP : {profile.nohp}</Text>
+            <Text style={styles.desc}>Alamat : {profile.alamat}</Text>
           </View>
 
           <ListMenu menus={menus} navigation={this.props.navigation}/>
