@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import axios from 'axios';
 import {API_URL} from '../utils/constant';
 import {setToken} from '../storage';

@@ -10,6 +10,8 @@ import {
     Plastic,
     LiverpoolDepan,
     LiverpoolBelakang,
+    GlassImage,
+    GlassImage2,
   } from '../../assets';
   
   export const dummyPesanans = [
@@ -77,11 +79,11 @@ import {
           id: 1,
           product: {
             id: 5,
-            nama: 'LIVERPOOL AWAY 2018-2019',
-            gambar: [LiverpoolDepan, LiverpoolBelakang],
+            nama: 'Sampah Kaca',
+            gambar: [GlassImage, GlassImage2],
             liga: {
               id: 2,
-              nama: 'Premier League',
+              nama: 'Glass Waste',
               gambar: Glass,
             },
             harga: 125000,
@@ -99,8 +101,8 @@ import {
           id: 2,
           product: {
             id: 7,
-            nama: 'AC MILAN HOME 2018 2019',
-            gambar: [MilanDepan, MilanBelakang],
+            nama: 'Sampah Elektronik',
+            gambar: [EwasteImage, EwasteImage2],
             liga: {
               id: 3,
               nama: 'Serie A',
@@ -114,7 +116,7 @@ import {
           },
           jumlahPesan: 2,
           totalHarga: 255000,
-          keterangan: "Nama Jersey : Afif Nomor Punggung : 10.",
+          keterangan: "",
           ukuran: "M"
         }
       ]
